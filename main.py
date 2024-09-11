@@ -18,7 +18,7 @@ class Hrdina:
     health=100
     vitalita=0
     sila=0
-    obratnosť=0
+    obratnost=0
     sanca_na_zasah=50
     uhyb = 50
 
@@ -108,38 +108,6 @@ def suboj(hrdina,monstrum):
                 print("monstrum utoci a berie", monstrum.utok)
                 print("hrdina ma ",hrdina.health)
 
-
-        """hr_ut=int(hrdina.sanca_na_zasah)
-        mon_uh=int(monstrum.uhyb)
-        a=random.choices([1,0],weights=[hr_ut,mon_uh],k=1)
-        int_pomocna=int(''.join(map(str,a)))
-        if int_pomocna==1:
-            print('hrdina utoci a berie ', hrdina.utok)
-            monstrum.health -= hrdina.utok
-            print('monstrum zivot', monstrum.health)
-        else:
-            print("monstrum sa vyhlo")
-
-        mon_ut=(monstrum.sanca_na_zasah)
-        hr_uh=(hrdina.uhyb)
-        #a = random.choices([1, 0], weights=[mon_ut, hr_uh], k=1)
-        #int_pomocna = int(''.join(map(str, a)))
-        if int_pomocna==1:
-            print('monstrum utoci', monstrum.utok)
-            hrdina.health -= monstrum.utok+hrdina.zbroj
-            print('hrdina zivot', hrdina.health)
-        else:
-            print("hrdina sa vyhol")"""
-
-        #monstrum.health-=hrdina.utok
-        #print('hrdina utoci a berie ',hrdina.utok)
-        #print('monstrum zivot', monstrum.health)
-        #hrdina.health-=monstrum.utok
-        #print('zviera utoci a berie ',monstrum.utok)
-        #print('hrdina zivot', hrdina.health)
-
-
-
 hrdina1=Hrdina()
 monstrum1=Beast("Minotaurus",500,50,50,40,10)
 zoznam.append(monstrum1)
@@ -157,7 +125,7 @@ print("Máš",skill_point," bodddov na vylepšie, aké vylepšie by si chcel?(vi
 #print(monstrum1.utok)
 #print(monstrum1.obrana)
 
-
+print("ahoj")
 super=random.choice(zoznam)
 print(super.name)
 suboj(hrdina1,super)
